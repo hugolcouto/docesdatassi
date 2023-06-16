@@ -1,0 +1,25 @@
+{
+	"name": "html-dev-kickstarter",
+	"version": "1.0.0",
+	"description": "Kickstarter project for HTML, CSS and JS development",
+	"main": "index.js",
+	"repository": "https://github.com/hugolcouto/html-dev-kickstarter",
+	"author": "Hugo Couto",
+	"license": "MIT",
+	"private": false,
+	"devDependencies": {
+		"@nonsugarless/webp-converter": "^1.0.4",
+		"cli-watch": "^1.0.7",
+		"concurrently": "^8.0.1",
+		"node-sass": "^8.0.0",
+		"live-server": "1.2.1",
+		"uglify-js": "^3.17.4"
+	},
+	"scripts": {
+		"css": "node-sass ./assets/src/scss -o ./assets/dist/css -w --output-style compressed",
+		"img": "webp-cli watch",
+		"js": "watch -f ./assets/src/js/index.js -r 'uglifyjs ./assets/src/js/index.js -o assets/dist/js/index.js'",
+		"server": "live-server --port=2112",
+		"dev": "concurrently --kill-others \"yarn css\" \"yarn img\" \"yarn js\" \"yarn server\""
+	}
+}

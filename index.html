@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Doces da Tassi</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<style>
+		 @font-face {
+			font-family: "General Sans";
+			src: url("assets/dist/fonts/GeneralSans-Regular.woff2");
+		}
+		@font-face {
+			font-family: "General Sans Semibold";
+			src: url("assets/dist/fonts/GeneralSans-Semibold.woff2");
+		}
+		@font-face {
+			font-family: "General Sans Bold";
+			src: url("assets/dist/fonts/GeneralSans-Bold.woff2");
+		}
+	</style>
+	<link rel="stylesheet" href="assets/dist/css/style.css">
+</head>
+
+<body>
+	<header class="container navbar">
+		<h1>
+			<img 
+				height="30px"
+				src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='42' fill='none'%3E%3Cg fill='%23000' clip-path='url(%23a)'%3E%3Cpath d='M0 41.16V.84h15.832c12.836 0 20.921 8.197 20.921 19.936S28.386 41.16 15.832 41.16H0Zm10.686-9.15h4.526c7.07 0 10.573-3.646 10.573-11.227 0-7.133-3.616-10.78-10.573-10.78h-4.526V32.01ZM39.051 20.944C39.051 8.701 48.271 0 59.973 0c11.7 0 20.977 8.701 20.977 20.944C80.95 33.187 71.737 42 59.973 42 48.208 42 39.05 33.187 39.05 20.944Zm30.875 0c0-6.342-3.56-11.452-9.953-11.452-6.394 0-9.954 5.11-9.954 11.452s3.56 11.564 9.954 11.564c6.393 0 9.953-5.222 9.953-11.564ZM83.248 20.944C83.248 9.149 92.348 0 103.887 0c11.54 0 19.73 7.357 21.034 18.025h-11.306c-.846-5.054-4.638-8.533-9.615-8.533-5.991 0-9.784 4.606-9.784 11.452S98.001 32.508 104 32.508c4.92 0 8.706-3.479 9.615-8.589h11.306C123.561 34.699 115.025 42 103.887 42c-11.137 0-20.639-9.212-20.639-21.056ZM158.08 41.16h-28.725V.84h28.33v9.212h-17.643v5.782h16.001v9.212h-16.001v6.909h18.038v9.212-.007ZM178.67 41.72c-10.574 0-17.362-5.558-18.095-14.49h10.799c.113 3.815 2.658 6.23 7.07 6.23 3.673 0 6.105-1.407 6.105-3.934 0-1.743-1.756-3.03-4.131-3.479l-7.408-1.407c-6.5-1.232-10.799-4.998-10.799-11.508 0-7.525 6.668-12.803 15.775-12.803 9.671 0 16.622 5.502 17.249 14.203h-10.799c-.282-3.647-2.77-6.006-6.33-6.006-3.165 0-5.089 1.687-5.089 3.871 0 1.8 1.811 2.863 3.961 3.255l7.86 1.52c7.239 1.406 11.081 4.941 11.081 10.78 0 8.308-6.676 13.754-17.249 13.754v.014ZM210.263 17.465c1.777 0 3.299.63 4.624 1.89v-7.238h5.421v22.59h-4.977v-1.919c-1.395 1.45-3.073 2.233-5.068 2.233-4.596 0-7.606-3.934-7.606-8.778s3.01-8.778 7.606-8.778Zm1.297 12.712c1.678 0 3.264-1.288 3.264-3.962 0-2.674-1.614-3.899-3.264-3.899-1.649 0-3.263 1.225-3.263 3.934 0 2.71 1.614 3.934 3.263 3.934v-.007ZM230.48 17.465c2.093 0 3.425.63 4.751 2.044v-1.73h4.976v16.934h-4.976v-1.918c-1.396 1.449-3.074 2.233-5.069 2.233-4.595 0-7.605-3.934-7.605-8.778s3.045-8.778 7.923-8.778v-.007Zm.979 12.712c1.678 0 3.264-1.288 3.264-3.962 0-2.674-1.614-3.9-3.264-3.9-1.649 0-3.263 1.226-3.263 3.935s1.614 3.934 3.263 3.934v-.007ZM252.578 41.16V10.444h-12.441V.84h35.562v9.604h-12.442V41.16h-10.686.007ZM298.453 33.69h-14.246l-2.545 7.47h-10.799L285.899.84H297.6l14.873 40.313h-11.532l-2.488-7.47v.008Zm-11.363-8.364h8.593l-4.244-12.803-4.356 12.803h.007ZM329.87 41.72c-10.573 0-17.362-5.558-18.095-14.49h10.799c.113 3.815 2.658 6.23 7.07 6.23 3.673 0 6.105-1.407 6.105-3.934 0-1.743-1.755-3.03-4.131-3.479l-7.408-1.407c-6.5-1.232-10.799-4.998-10.799-11.508 0-7.525 6.668-12.803 15.775-12.803 9.671 0 16.622 5.502 17.249 14.203h-10.799c-.282-3.647-2.77-6.006-6.33-6.006-3.165 0-5.089 1.687-5.089 3.871 0 1.8 1.811 2.863 3.961 3.255l7.86 1.52c7.239 1.406 11.081 4.941 11.081 10.78 0 8.308-6.676 13.754-17.242 13.754l-.007.014ZM367.243 41.72c-10.573 0-17.361-5.558-18.094-14.49h10.799c.113 3.815 2.657 6.23 7.07 6.23 3.672 0 6.104-1.407 6.104-3.934 0-1.743-1.755-3.03-4.13-3.479l-7.409-1.407c-6.499-1.232-10.799-4.998-10.799-11.508 0-7.525 6.668-12.803 15.776-12.803 9.671 0 16.621 5.502 17.249 14.203h-10.8c-.281-3.647-2.77-6.006-6.329-6.006-3.165 0-5.09 1.687-5.09 3.871 0 1.8 1.812 2.863 3.962 3.255l7.859 1.52c7.24 1.406 11.081 4.941 11.081 10.78 0 8.308-6.675 13.754-17.241 13.754l-.008.014ZM389.314 41.16V.84H400v40.32h-10.686Z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h400v42H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E" 
+				alt="Doces da Tassi"
+			>
+		</h1>
+		<nav>
+			<a href="">Home</a>
+			<a href="">Sobre</a>
+			<a href="">Contato</a>
+		</nav>
+	</header>
+	<main>
+		<section class="grid container main-content">
+			<div class="main-content__heading start-2 end-7" role="heading">
+				<h2>
+					Desde 2015 transformando momentos em bolo.
+				</h2>
+				<a class="btn" href="#" aria-label="Contato via whatsapp">
+					<span>Comemore com a gente</span>
+					<svg stroke-width="0" viewBox="0 0 24 24" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M19.05 4.91A9.816 9.816 0 0012.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 012.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28z"></path></svg>
+				</a>
+			</div>
+			<img 
+				class="main-content__img start-7 end-12" 
+				src='assets/dist/img/bolo.webp' 
+				alt='Bolo'
+			/>
+		</section>
+
+		<section class="image-banner">
+			<img 
+				alt="Bolo" 
+				class="lazy-loaded-image lazy roll-page-banner" 
+				src="assets/dist/img/placeholder.webp" 
+				data-src="./assets/dist/img/image-container.webp" 
+			/>
+		</section>
+
+		<section class="grid container">
+			<div class="start-1 end-7">
+				<div class="map">aqui terá o mapa :)</div>
+			</div>
+
+			<div class="start-7 end-13 info-grid">
+				<div class="info-card">
+					<h2>
+						Encomende com 07 dias de antecedência
+					</h2>
+					<article>
+						<p>
+							<strong>As reservas das datas ocorrem com o pagamento integral do pedido. </strong>
+						</p>
+						<p>
+							Pedidos de última hora apenas em acetato.
+							Consulte a disponibilidade de tamanhos e sabores. 
+						</p>
+					</article>
+				</div>
+				<div class="info-card">
+					<h2>
+						Atendimento
+					</h2>
+					<article>
+						<p>
+							Segunda a Sexta, <br>das 10h às 18h
+						</p>
+						<p>
+							Sábado de 12h, <br>às 15h30 
+						</p>
+					</article>
+				</div>
+				<div class="info-card">
+					<h2>
+						retirada
+					</h2>
+					<article>
+						<p>
+							Segunda a Sexta, <br>das 14h às 18h
+						</p>
+						<p>
+							Sábado, 12h às 16h
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="carousel-container">
+			<button id="prevSlide" aria-label="anterior"></button>
+			<button id="nextSlide" aria-label="próximo"></button>
+			<ul class="carousel">
+				<li class="carousel-images">
+					<figure>
+						<img 
+							alt="Bolo" 
+							class="lazy-loaded-image lazy" 
+							src="assets/dist/img/placeholder.webp" 
+							data-src="./assets/dist/img/image-container.webp" 
+						/>
+						<figcaption>
+							<p>Floral</p>
+						</figcaption>
+					</figure>
+				</li>
+				<!-- REMOVER -->
+				<li class="carousel-images">
+					<figure>
+						<img 
+							alt="Bolo" 
+							class="lazy-loaded-image lazy roll-page-banner" 
+							src="assets/dist/img/placeholder.webp" 
+							data-src="./assets/dist/img/image-container.webp" 
+						/>
+						<figcaption>
+							<p>Floral</p>
+						</figcaption>
+					</figure>
+				</li><li class="carousel-images">
+					<figure>
+						<img 
+							alt="Bolo" 
+							class="lazy-loaded-image lazy roll-page-banner" 
+							src="assets/dist/img/placeholder.webp" 
+							data-src="./assets/dist/img/image-container.webp" 
+						/>
+						<figcaption>
+							<p>Floral</p>
+						</figcaption>
+					</figure>
+				</li><li class="carousel-images">
+					<figure>
+						<img 
+							alt="Bolo" 
+							class="lazy-loaded-image lazy roll-page-banner" 
+							src="assets/dist/img/placeholder.webp" 
+							data-src="./assets/dist/img/image-container.webp" 
+						/>
+						<figcaption>
+							<p>Floral</p>
+						</figcaption>
+					</figure>
+				</li><li class="carousel-images">
+					<figure>
+						<img 
+							alt="Bolo" 
+							class="lazy-loaded-image lazy roll-page-banner" 
+							src="assets/dist/img/placeholder.webp" 
+							data-src="./assets/dist/img/image-container.webp" 
+						/>
+						<figcaption>
+							<p>Floral</p>
+						</figcaption>
+					</figure>
+				</li><li class="carousel-images">
+					<figure>
+						<img 
+							alt="Bolo" 
+							class="lazy-loaded-image lazy roll-page-banner" 
+							src="assets/dist/img/placeholder.webp" 
+							data-src="./assets/dist/img/image-container.webp" 
+						/>
+						<figcaption>
+							<p>Floral</p>
+						</figcaption>
+					</figure>
+				</li><li class="carousel-images">
+					<figure>
+						<img 
+							alt="Bolo" 
+							class="lazy-loaded-image lazy roll-page-banner" 
+							src="assets/dist/img/placeholder.webp" 
+							data-src="./assets/dist/img/image-container.webp" 
+						/>
+						<figcaption>
+							<p>Floral</p>
+						</figcaption>
+					</figure>
+				</li><li class="carousel-images">
+					<figure>
+						<img 
+							alt="Bolo" 
+							class="lazy-loaded-image lazy roll-page-banner" 
+							src="assets/dist/img/placeholder.webp" 
+							data-src="./assets/dist/img/image-container.webp" 
+						/>
+						<figcaption>
+							<p>Floral</p>
+						</figcaption>
+					</figure>
+				</li><li class="carousel-images">
+					<figure>
+						<img 
+							alt="Bolo" 
+							class="lazy-loaded-image lazy roll-page-banner" 
+							src="assets/dist/img/placeholder.webp" 
+							data-src="./assets/dist/img/image-container.webp" 
+						/>
+						<figcaption>
+							<p>Floral</p>
+						</figcaption>
+					</figure>
+				</li>
+				<!-- REMOVER -->
+			</ul>
+		</section>
+
+		<section class="order">
+			<article class="grid">
+				<h2 class="start-4 end-10 heading">Como pedir um bolo único</h2>
+				<section class="order-text start-3 end-11">
+					<div class="order-text-block">
+						<div>
+							<h4>01</h4>
+							<h5>Mande um oi pra gente!</h5>
+						</div>
+						<a class="btn" href="#" aria-label="Contato via whatsapp">
+							<span>Clique aqui e fale com a gente</span>
+							<svg stroke-width="0" viewBox="0 0 24 24" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M19.05 4.91A9.816 9.816 0 0012.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 012.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28z"></path></svg>
+						</a>
+					</div>
+				</section>
+				<section class="order-text start-3 end-11">
+					<div class="order-text-block">
+						<div>
+							<h4>02</h4>
+							<h5>Conte como será sua comemoração</h5>
+						</div>
+						<p>
+							Quanto mais detalhes, melhor! Sempre mandamos umas perguntinhas importantes pra te ajudar a escolher o bolo perfeito para o seu evento.
+						</p>
+					</div>
+				</section>
+				<section class="order-text start-3 end-11">
+					<div class="order-text-block">
+						<div>
+							<h4>03</h4>
+							<h5>Escolha o tamanho, sabor e a decoração</h5>
+						</div>
+						<p>
+							Lembrando que pedimos 07 dias de antecedência.
+						</p>
+					</div>
+				</section>
+				<section class="flex order-text start-3 end-11">
+					<div class="order-text-block">
+						<div>
+							<h4>04</h4>
+							<h5>Confirme a encomenda</h5>
+						</div>
+						<p>
+							A encomenda só é confirmada com a transferência do valor final e o envio do comprovante. :)
+						</p>
+					</div>
+				</section>
+				<section class="feedback start-3 end-11">
+					<p class="flex feedback-rating justify-center">
+						<i class="feedback-rating-star">&starf;</i>
+						<i class="feedback-rating-star">&starf;</i>
+						<i class="feedback-rating-star">&starf;</i>
+						<i class="feedback-rating-star">&starf;</i>
+						<i class="feedback-rating-star">&starf;</i>
+					</p>
+					<p class="feedback-text">
+						Tem dois tipos de feedbacks que amamos receber: <br>
+						<strong>“Deu dó de cortar!”</strong> e <strong>“Quando cortamos, não sobrou!</strong>
+					</p>
+				</section>
+			</article>
+			<section class="carousel-container--feedback">
+				<button id="prevSlideFeedback" aria-label="anterior"></button>
+				<button id="nextSlideFeedback" aria-label="próximo"></button>
+				<ul class="carousel--feedback">
+					<li class="carousel--feedback-testimonials">
+						<article>
+							<p>
+								O bolo veio do jeitinho que eu imaginava: lindíssimo e saborosíssimo! 
+								Além de ser uma obra de arte para os olhos, estava uma delícia!!! Pena 
+								que eu encomendei do pequeno... Foi embora rapidinho, rsrs. 
+								Todos amaram e repetiram! 😘
+							</p>
+						</article>
+					</li>
+					<!-- REMOVER -->
+					<li class="carousel--feedback-testimonials">
+						<article>
+							<p>
+								O bolo veio do jeitinho que eu imaginava: lindíssimo e saborosíssimo! 
+								Além de ser uma obra de arte para os olhos, estava uma delícia!!! Pena 
+								que eu encomendei do pequeno... Foi embora rapidinho, rsrs. 
+								Todos amaram e repetiram! 😘
+							</p>
+						</article>
+					</li>
+					<li class="carousel--feedback-testimonials">
+						<article>
+							<p>
+								O bolo veio do jeitinho que eu imaginava: lindíssimo e saborosíssimo! 
+								Além de ser uma obra de arte para os olhos, estava uma delícia!!! Pena 
+								que eu encomendei do pequeno... Foi embora rapidinho, rsrs. 
+								Todos amaram e repetiram! 😘
+							</p>
+						</article>
+					</li>
+					<li class="carousel--feedback-testimonials">
+						<article>
+							<p>
+								O bolo veio do jeitinho que eu imaginava: lindíssimo e saborosíssimo! 
+								Além de ser uma obra de arte para os olhos, estava uma delícia!!! Pena 
+								que eu encomendei do pequeno... Foi embora rapidinho, rsrs. 
+								Todos amaram e repetiram! 😘
+							</p>
+						</article>
+					</li>
+					<li class="carousel--feedback-testimonials">
+						<article>
+							<p>
+								O bolo veio do jeitinho que eu imaginava: lindíssimo e saborosíssimo! 
+								Além de ser uma obra de arte para os olhos, estava uma delícia!!! Pena 
+								que eu encomendei do pequeno... Foi embora rapidinho, rsrs. 
+								Todos amaram e repetiram! 😘
+							</p>
+						</article>
+					</li>
+					<li class="carousel--feedback-testimonials">
+						<article>
+							<p>
+								O bolo veio do jeitinho que eu imaginava: lindíssimo e saborosíssimo! 
+								Além de ser uma obra de arte para os olhos, estava uma delícia!!! Pena 
+								que eu encomendei do pequeno... Foi embora rapidinho, rsrs. 
+								Todos amaram e repetiram! 😘
+							</p>
+						</article>
+					</li>
+					<li class="carousel--feedback-testimonials">
+						<article>
+							<p>
+								O bolo veio do jeitinho que eu imaginava: lindíssimo e saborosíssimo! 
+								Além de ser uma obra de arte para os olhos, estava uma delícia!!! Pena 
+								que eu encomendei do pequeno... Foi embora rapidinho, rsrs. 
+								Todos amaram e repetiram! 😘
+							</p>
+						</article>
+					</li>
+					<!-- REMOVER -->
+				</ul>
+			</section>
+		</section>
+		<section class="about grid">
+			<article class="flex direction-column start-4 end-10">
+				<img 
+					alt="Bolo" 
+					class="lazy-loaded-image lazy" 
+					src="assets/dist/img/placeholder.webp" 
+					data-src="./assets/dist/img/tassi.png.webp" 
+				/>
+
+				<div class="flex direction-column">
+					<h2>Doces da Tassi <br> por Tassiane Oliveira</h2>
+
+					<p>
+						Um belo dia em uma cozinha no interior do Rio de Janeiro, alguns cookies fizeram nascer em mim uma confeiteira apaixonada por levar doçura para a vida das pessoas através de receitas deliciosas e cheias de amor! 
+					</p>
+					<p>
+						Cozinhar sempre foi algo que fiz a minha vida inteira. Meus pais tinham um restaurante. Minhas irmãs e eu ajudávamos a embalar as quentinhas, picar uma coisinha ou outra... Mas sim, foram esses biscoitinhos americanos, lá por volta de 2011, que me ajudaram a descobrir o quanto eu amo preparar doces. Mesmo na época não tendo a menor noção disso.
+					</p>
+					<p>
+						Foi só quando passei a vender não só esses biscoitinhos, como nosso amado brigadeiro na faculdade, que entendi a minha paixão pela Confeitaria. Mas, como a vida nem sempre é doce, na época, em minha cidade natal — Angra dos Reis, RJ — era difícil encontrar cursos, ingredientes e equipamentos específicos para as receitas das sobremesas americanas que tanto amava e queria aprender.
+					</p>
+					<p>
+						Sabia que teria que me mudar se eu quisesse me aperfeiçoar. Depois de algum tempo e algumas encomendas, em 2014, surgiu a oportunidade de trabalhar em uma confeitaria em Volta Redonda, também no interior do Rio de Janeiro. Foi então a maneira que encontrei para estar em contato com a realidade que eu tanto queria para mim.
+					</p>
+					<p>
+						Me mudei. E então vieram os estudos (de SENAI a cursos com confeiteiras que admiro), os testes, os equipamentos e quando me dei conta... Confeiteira! E essa confeiteira, em 2018, com uma sobremesa clássica americana — a torta de maçã com creme inglês — recebeu o troféu de Confeiteira Mais Doce do GNT! 
+					</p>
+					<p>
+						Tem sido uma experiência indescritível poder adoçar com muito carinho e muito amor os momentos especiais das pessoas, e uma felicidade sem igual ajudar confeiteiras e amantes da confeitaria em suas jornadas!
+					</p>
+				</div>
+			</article>
+		</section>
+		<section class="menu grid container cta-menu">
+			<article class="start-2 end-7">
+				<p>
+					Confira nosso menu!
+				</p>
+				<a class="btn" href="#" aria-label="Contato via whatsapp">
+					<span>Menu 2023</span>
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M14.59 16.004L5.982 7.397l1.414-1.414 8.607 8.606V7.004h2v11h-11v-2z"></path></g></svg>
+				</a>
+			</article>
+			<img 
+				alt="Bolo" 
+				class="lazy-loaded-image lazy start-7 end-13" 
+				src="assets/dist/img/placeholder.webp" 
+				data-src="./assets/dist/img/cta-menu.png.webp" 
+			/>
+		</section>
+		<section class="menu grid container cta-instagram">
+			<img 
+				alt="Bolo" 
+				class="lazy-loaded-image lazy start-1 end-7" 
+				src="assets/dist/img/placeholder.webp" 
+				data-src="./assets/dist/img/cta-instagram.png.webp" 
+			/>
+			<article class="start-8 end-12">
+				<p>
+					Veja o que estamos aprontando lá no Instagram!
+				</p>
+				<a class="btn" href="#" aria-label="Contato via whatsapp">
+					<span>
+						@docesdatassi
+					</span>
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="32px" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+				</a>
+			</article>
+		</section>
+		<section class="menu grid container cta-learn">
+			<article class="start-2 end-7">
+				<p>
+					Quer aprender sobre
+					bolos com a Tassi?
+				</p>
+				<p>
+					<span>
+						Em breve, traremos novidades sobre cursos para quem quer aprender mais sobre bolos, buttercream, decorações, harmonia de sabores.
+					</span>
+				</p>
+				<a class="btn" href="#" aria-label="Contato via whatsapp">
+					<span>Quero saber mais</span>
+					<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M14.59 16.004L5.982 7.397l1.414-1.414 8.607 8.606V7.004h2v11h-11v-2z"></path></g></svg>
+				</a>
+			</article>
+			<img 
+				alt="Bolo" 
+				class="lazy-loaded-image lazy start-7 end-13" 
+				src="assets/dist/img/placeholder.webp" 
+				data-src="./assets/dist/img/cta-learn.png.webp" 
+			/>
+		</section>
+		<section class="grid container cta-buy">
+			<article class="start-3 end-7 flex align-center justify-center">
+				<p>
+					Comemore com a gente!
+				</p>
+			</article>
+			<div class="start-7 end-10 flex justify-center align-center">
+				<a class="btn" href="#" aria-label="Contato via whatsapp">
+					<span>Quero encomendar!</span>
+					<svg stroke-width="0" viewBox="0 0 24 24" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M19.05 4.91A9.816 9.816 0 0012.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 012.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28z"></path></svg>
+				</a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		
+	</footer>
+	<script src="https://unpkg.com/jquery"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="assets/dist/js/index.js"></script>
+	<script>
+		$('.carousel--feedback').slick({
+			infinite: false,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			centerMode: true,
+			variableWidth: true,
+			initialSlide: 1,
+			prevArrow: '#prevSlideFeedback',
+			nextArrow: '#nextSlideFeedback'
+		});
+	</script>
+	<script>
+		$('.carousel').slick({
+			infinite: false,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			centerMode: true,
+			variableWidth: true,
+			initialSlide: 1,
+			prevArrow: '#prevSlide',
+			nextArrow: '#nextSlide'
+		});
+	</script>
+</body>
+</html>

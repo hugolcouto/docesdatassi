@@ -1,0 +1,7 @@
+{
+	"destDir": "./assets/dist/img/",
+	"originalDir": "./assets/src/img/",
+	"targetExt": ".+(jpg|jpeg|png|gif)",
+	"webpConverterOption": "-q 75 -sharp_yuv -m 5 -mt",
+	"webpConverterGifOption": "-q 90 -m 5 -mt"
+}

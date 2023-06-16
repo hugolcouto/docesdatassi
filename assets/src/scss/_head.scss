@@ -1,0 +1,69 @@
+/**
+ * Arquivo temporário com configurações que
+ * estarão disponíveis na tag <style> no <head>
+ * da página
+ * 
+ * Este arquivo deverá ser escrito em css puro!
+ */
+ 
+
+ *, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "General Sans", sans-serif;
+ }
+
+.container {
+	max-width: 1696px;
+	margin: 0 auto;
+}
+
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 180px;
+}
+
+.navbar > nav {
+	display: flex;
+	gap: 86px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar > nav > a {
+	font-size: 24px;
+	line-height: 100%;
+	font-family: "General Sans", sans-serif;
+	color: #000;
+	text-decoration: none;
+}
+
+.main-content {
+	height: 100vh;
+}
+
+.main-content__heading {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 64px;
+}
+
+.main-content__heading > h2 {
+	font-size: 104px;
+	line-height: 100%;
+	font-family: "General Sans Semibold", sans-serif;
+	z-index: 2;
+	position: relative;
+	color: #000;
+}
+
+.main-content__img  {
+	width: 100%;
+	z-index: 1;
+	position: relative;
+}

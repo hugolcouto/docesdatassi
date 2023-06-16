@@ -1,0 +1,49 @@
+// Grid
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 32px;
+}
+
+@for $i from 1 through 13 {
+	.start-#{$i} {
+		grid-column-start: #{$i};
+	}
+
+	.end-#{$i} {
+		grid-column-end: #{$i};
+	}
+}
+
+
+.flex {
+    display: flex;
+}
+
+$positions: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    space-between: space-between,
+);
+
+@each $position, $value in $positions {
+    .align-#{$position} {
+        align-items: #{$value};
+    }
+    .justify-#{$position} {
+        justify-content: #{$value};
+    }
+}
+
+$directions: (row, row-reverse, column, column-reverse, stretch);
+
+@each $direction in $directions {
+    .direction-#{$direction} {
+        flex-direction: #{$direction};
+    }
+}
+
+.full-width {
+	width: 100%;
+}
